@@ -27,7 +27,7 @@
                 </div>
                 <ul class="flex flex-col py-4">
                     <li>
-                        <a href="{{'dashboard'}} "class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+                        <a href="{{'dashboard'}} " class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                             <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-home"></i></span>
                             <span class="text-sm font-medium">Dashboard</span>
                         </a>
@@ -40,7 +40,7 @@
                     </li>
                     <li>
                         <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
-                            <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class='bx bxs-user-check' ></i></span>
+                            <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class='bx bxs-user-check'></i></span>
                             <span class="text-sm font-medium">Booking</span>
                         </a>
                     </li>
@@ -56,13 +56,16 @@
                             <span class="text-sm font-medium">Users</span>
                         </a>
                     </li>
-                  
-                  
+
+
                     <li>
-                        <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
-                            <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-log-out"></i></span>
-                            <span class="text-sm font-medium">Logout</span>
-                        </a>
+                        <form action="{{route('logout')}}" method="post">
+                            <button type="submit" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+                                <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-log-out"></i></span>
+                                <span class="text-sm font-medium">Logout</span>
+                            </button>
+
+                        </form>
                     </li>
                 </ul>
             </div>

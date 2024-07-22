@@ -44,8 +44,7 @@ Route::middleware('auth')->group(function () {
 Route::post('/booking/store',[BookingController::class,'store'])->name('booking.store');
 
 //esewa
-Route::get('/esewa/{id}', [EsewaController::class, 'esewa'])->name('esewa');
-Route::get('/esewaform',[EsewaController::class,'index'])->name('user.esewaform');
+
 
 Route::get('/esewa/success',[EsewaController::class,'esewaSuccess'])->name('esewa.success');
 Route::post('/esewa/fail',[EsewaController::class,'esewaFail'])->name('esewa.fail');

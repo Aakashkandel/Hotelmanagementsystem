@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('room_id');
+            $table->string('user_id');
             $table->string('name');
             $table->string('email');
             $table->string('phone');
@@ -25,6 +26,7 @@ return new class extends Migration
             $table->string('room_type');
             $table->text('message')->nullable();
             $table->string('payment_method');
+            $table->string('status')->default('pending');
             $table->timestamps();
             $table->foreign('room_id')->references('id')->on('rooms')->onDelete('cascade');
         });
