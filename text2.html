@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+<div class="container mx-auto p-6">
+    <!-- Header -->
+    <header class="mb-4">
+        <h1 class="text-3xl font-semibold text-center">Booking Details</h1>
+    </header>
+    
+    <!-- Booking Details Card -->
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-semibold mb-4">Booking ID: #123456789</h2>
+
+        <!-- Customer Information -->
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-2">Customer Information</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <p><span class="font-medium">Name:</span> John Doe</p>
+                    <p><span class="font-medium">Email:</span> john.doe@example.com</p>
+                </div>
+                <div>
+                    <p><span class="font-medium">Phone:</span> +123456789</p>
+                    <p><span class="font-medium">Address:</span> 123 Street, City, Country</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Room Details -->
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-2">Room Details</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <p><span class="font-medium">Room Name:</span> Deluxe Room</p>
+                    <p><span class="font-medium">Room ID:</span> R101</p>
+                </div>
+                <div>
+                    <p><span class="font-medium">Price:</span> $200/night</p>
+                    <p><span class="font-medium">Capacity:</span> 2 Adults</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking Dates -->
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-2">Booking Dates</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <p><span class="font-medium">Check-in Date:</span> 2024-07-25</p>
+                    <p><span class="font-medium">Check-out Date:</span> 2024-07-30</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment Details -->
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-2">Payment Details</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <p><span class="font-medium">Payment Method:</span> eSewa Wallet</p>
+                    <p><span class="font-medium">Total Amount:</span> $1000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex justify-end space-x-4">
+            <button class="bg-green-600 text-white py-2 px-4 rounded-lg shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500">Confirm</button>
+            <button class="bg-red-600 text-white py-2 px-4 rounded-lg shadow hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500">Cancel</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
